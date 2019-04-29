@@ -4,7 +4,7 @@
 	
 	
 		<classes>
-			<class name="Naveen.Challenge_1.TestCases.ListPropertiesTestCases" />
+			<class name="Naveen.NaveenCodingChallenge1.testcases.ListPropertiesTestCases" />
 		</classes>
 	</test> 
 	</suite>
