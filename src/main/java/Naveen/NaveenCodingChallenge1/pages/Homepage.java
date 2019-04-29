@@ -76,6 +76,12 @@ public class Homepage extends TestBaseChallenge {
    
    public void Inputdata(String Location) {
 	   Inputtext.sendKeys(Location);
+	   try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	   WebElement test= driver.findElement(By.linkText(Location));
 	   test.click();
    }
@@ -90,9 +96,10 @@ public class Homepage extends TestBaseChallenge {
    public void GetList() throws InterruptedException {
 	   ListViewPrice.size();
 	   ArrayList<Integer> al = new ArrayList<Integer>();
-	   for(int i=0; i<=ListViewPrice.size(); i++) {
+	   for(int i=0; i<ListViewPrice.size(); i++) {
 		   
 		   String data= ListViewPrice.get(i).getText();
+		   Thread.sleep(1000);
 		   data= data.replaceAll("[^0-9]", ""); // to replace junk values
             System.out.println(data);
             al.add(Integer.parseInt(data)); //parse string into int value

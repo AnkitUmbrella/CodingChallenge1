@@ -5,8 +5,9 @@
     <classes>
       <class name="Naveen.NaveenCodingChallenge1.testcases.ListPropertiesTestCases">
         <methods>
+          <include name="ClickAgentName"/>
           <include name="teardown"/>
-          <include name="listview"/>
+          <include name="InputText"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Naveen.NaveenCodingChallenge1.testcases.ListPropertiesTestCases -->
