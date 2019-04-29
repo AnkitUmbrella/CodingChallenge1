@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SuiteName">
+	<test name="Zoopla Test" allow-return-values="true">
+	
+	
+		<classes>
+			<class name="Naveen.Challenge_1.TestCases.ListPropertiesTestCases" />
+		</classes>
+	</test> 
+	</suite>
